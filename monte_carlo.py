@@ -62,5 +62,17 @@ plt.ylabel("Stock Price") # label the y-axis
 plt.title("Simulation of Stock Price") # title of the plot
 plt.show() # display the plot
 
+# Create a histogram of simulated ending prices
+plt.hist(final_prices, bins=30)
+
+plt.xlabel("Final Stock Price (£)") 
+plt.ylabel("Number of Simulations") 
+plt.title("Distribution of Simulated Ending Prices")
+plt.axvline(starting_price, color='red', linestyle='--', label='Starting Price (£100)') # add a vertical line at the starting price
+plt.legend() # add a legend to the plot
+
+# Show the graph 
+plt.show()
+
 
 
